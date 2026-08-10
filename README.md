@@ -20,6 +20,8 @@
 ## Repository Structure
 ## 📁 Project Structure
 
+
+```text
 ce-lab-pipeline-optimization/
 ├── .github/
 │   └── workflows/
