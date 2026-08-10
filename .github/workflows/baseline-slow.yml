@@ -13,6 +13,7 @@ jobs:
   terraform-all-in-one:
     name: Terraform (Sequential - No Cache)
     runs-on: ubuntu-latest
+
     defaults:
       run:
         working-directory: terraform
@@ -24,11 +25,11 @@ jobs:
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
         with:
-          terraform_version: 1.6.0
+          terraform_version: 1.15.8
 
       # Anti-pattern: no caching — downloads providers every run
       - name: Terraform Init
-        run: terraform init -backend=false
+        run: terraform init -backend=false -upgrade
 
       # Anti-pattern: sequential steps that could run in parallel
       - name: Terraform Format Check
