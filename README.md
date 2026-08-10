@@ -18,15 +18,19 @@
 4. **Matrix Testing** — validate across multiple Terraform versions
  
 ## Repository Structure
-\`\`\`
-├── .github/workflows/
-│   ├── baseline-slow.yml.disabled
-│   ├── optimized.yml
-│   └── matrix-test.yml
+## 📁 Project Structure
+
+ce-lab-pipeline-optimization/
+├── .github/
+│   └── workflows/
+│       ├── baseline-slow.yml.disabled
+│       ├── optimized.yml
+│       └── matrix-test.yml
+│
 ├── terraform/
 │   ├── main.tf
 │   ├── variables.tf
 │   └── outputs.tf
+│
 ├── .gitignore
 └── README.md
-\`\`\`
